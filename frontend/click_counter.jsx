@@ -1,5 +1,7 @@
 import React from 'react';
 import Counts from './counts';
+import Word from './word';
+import Agereader from './agereader';
 
 class ClickCounter extends React.Component {
   constructor(props) {
@@ -49,6 +51,8 @@ class ClickCounter extends React.Component {
           <span>{this.state.count}</span>
         </h1>
         <Counts previousClicks={this.state.previousClicks}/>
+        <Word />
+        <Agereader />
       </div>
     );
   }

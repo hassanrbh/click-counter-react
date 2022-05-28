@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Counts = ({previousClicks}) => {
-  return (
-    <ul>
+const Counts = ({previousClicks}) => (
+  <ul>
       {previousClicks.map((count,idx) => <li key={idx}>{count}</li>)}
-    </ul>
-  )
-}
+  </ul>
+)
 
 // For lifecycle method demo:
 //
